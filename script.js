@@ -74,27 +74,7 @@ contactForm.addEventListener('submit', async (e) => {
     submitBtn.innerHTML = '<span>Enviando...</span>';
     submitBtn.disabled = true;
 
-    // Simulate form submission (Integrating with Formspree or similar in real usage)
-    // To make it fully functional, the user would replace the URL below with their Formspree ID
-    /*
-    try {
-        const response = await fetch('https://formspree.io/f/YOUR_ID_HERE', {
-            method: 'POST',
-            body: new FormData(contactForm),
-            headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-            showStatus('¡Mensaje enviado con éxito! Me pondré en contacto pronto.', 'success');
-            contactForm.reset();
-        } else {
-            showStatus('Hubo un error al enviar el mensaje. Inténtalo de nuevo.', 'error');
-        }
-    } catch (error) {
-        showStatus('Error de conexión. Inténtalo más tarde.', 'error');
-    }
-    */
-
-    // For demonstration/initial setup, simulate success:
+    // Simulate form submission
     setTimeout(() => {
         showStatus('¡Gracias Martha! El formulario ha sido configurado. (Simulación de envío a marthaceci.pacheco@gmail.com)', 'success');
         submitBtn.innerHTML = originalBtnContent;
